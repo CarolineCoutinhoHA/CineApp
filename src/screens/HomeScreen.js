@@ -96,7 +96,8 @@ const HomeScreen = () => {
                 key={genre}
                 label={genre}
                 value={genre}
-                color="#000000"
+                color="#FFFFFF"
+                style={{ backgroundColor: '#0F3460' }}
               />
             ))}
           </Picker>
@@ -152,6 +153,10 @@ const styles = StyleSheet.create({
   picker: {
     color: '#FFFFFF',
     backgroundColor: '#16213E',
+  },
+  pickerItem: {
+    backgroundColor: '#0F3460',
+    color: '#FFFFFF',
   },
   moviesList: {
     paddingBottom: 20,

@@ -107,6 +107,310 @@ export const fetchMovies = async () => {
         year: '2019',
         poster: 'https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg',
         synopsis: 'Um detetive investiga a morte de um escritor famoso.'
+      },
+      {
+        id: '13',
+        title: 'Pantera Negra',
+        genre: 'Ação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
+        synopsis: 'T\'Challa retorna para casa para ser coroado rei de Wakanda.'
+      },
+      {
+        id: '14',
+        title: 'A Forma da Água',
+        genre: 'Drama',
+        year: '2017',
+        poster: 'https://image.tmdb.org/t/p/w500/k4FwHlMhuRR5BISY2Gm2QZHlH5Q.jpg',
+        synopsis: 'Uma mulher muda se apaixona por uma criatura aquática.'
+      },
+      {
+        id: '15',
+        title: 'Coco',
+        genre: 'Animação',
+        year: '2017',
+        poster: 'https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg',
+        synopsis: 'Miguel viaja para a Terra dos Mortos para descobrir sua família.'
+      },
+      {
+        id: '16',
+        title: 'Hereditary',
+        genre: 'Terror',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/p81a0FTVzsmCQP3SFm3hLZJQNkZ.jpg',
+        synopsis: 'Uma família enfrenta segredos sombrios após a morte da avó.'
+      },
+      {
+        id: '17',
+        title: 'Deadpool 2',
+        genre: 'Comédia',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg',
+        synopsis: 'Wade Wilson forma uma equipe para proteger um jovem mutante.'
+      },
+      {
+        id: '18',
+        title: 'Bohemian Rhapsody',
+        genre: 'Drama',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg',
+        synopsis: 'A história da lendária banda Queen e seu vocalista Freddie Mercury.'
+      },
+      {
+        id: '19',
+        title: 'Aquaman',
+        genre: 'Ação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg',
+        synopsis: 'Arthur Curry descobre que é herdeiro do reino subaquático de Atlântida.'
+      },
+      {
+        id: '20',
+        title: 'Homem-Aranha no Aranhaverso',
+        genre: 'Animação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg',
+        synopsis: 'Miles Morales se torna o novo Homem-Aranha em seu universo.'
+      },
+      {
+        id: '21',
+        title: 'A Quiet Place',
+        genre: 'Terror',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/nAU74GmpUk7t5iklEp3bufwDq4n.jpg',
+        synopsis: 'Uma família vive em silêncio para evitar criaturas que caçam pelo som.'
+      },
+      {
+        id: '22',
+        title: 'Capitã Marvel',
+        genre: 'Ação',
+        year: '2019',
+        poster: 'https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg',
+        synopsis: 'Carol Danvers se torna uma das heroínas mais poderosas do universo.'
+      },
+      {
+        id: '23',
+        title: 'Green Book',
+        genre: 'Drama',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg',
+        synopsis: 'Um pianista negro e seu motorista branco viajam pelo sul dos EUA.'
+      },
+      {
+        id: '24',
+        title: 'Os Incríveis 2',
+        genre: 'Animação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg',
+        synopsis: 'A família Pêra enfrenta novos desafios enquanto Helen trabalha como heroína.'
+      },
+      {
+        id: '25',
+        title: 'Halloween',
+        genre: 'Terror',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/bXs0zkv2iGVViZEy78teg2ycDBm.jpg',
+        synopsis: 'Michael Myers retorna para aterrorizar Haddonfield mais uma vez.'
+      },
+      {
+        id: '26',
+        title: 'Crazy Rich Asians',
+        genre: 'Comédia',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/1XxL8LWwxOk4QVPsQz2GHe6McQZ.jpg',
+        synopsis: 'Uma mulher descobre que seu namorado é um dos solteiros mais cobiçados da Ásia.'
+      },
+      {
+        id: '27',
+        title: 'Venom',
+        genre: 'Ação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/2uNW4WbgBXL25BAbXGLnLqX71Sw.jpg',
+        synopsis: 'Eddie Brock se torna hospedeiro de um simbionte alienígena.'
+      },
+      {
+        id: '28',
+        title: 'Roma',
+        genre: 'Drama',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/1V2dqNFejJW8Pzh8MA1Gx5mGPNc.jpg',
+        synopsis: 'A vida de uma empregada doméstica na Cidade do México dos anos 70.'
+      },
+      {
+        id: '29',
+        title: 'Ralph Breaks the Internet',
+        genre: 'Animação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/qEnH5meR381iMpmCQVylsswYBJ2.jpg',
+        synopsis: 'Ralph e Vanellope descobrem a internet em busca de uma peça para o jogo dela.'
+      },
+      {
+        id: '30',
+        title: 'The Nun',
+        genre: 'Terror',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/sFC1ElvoKGdHJIWRpNB3xWJ9lJA.jpg',
+        synopsis: 'Um padre e uma noviça investigam o suicídio de uma freira na Romênia.'
+      },
+      {
+        id: '31',
+        title: 'Bumblebee',
+        genre: 'Ação',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/fw02ONlDhrYjTSoc0RneaNL6k3g.jpg',
+        synopsis: 'Uma adolescente encontra e faz amizade com o Autobot Bumblebee.'
+      },
+      {
+        id: '32',
+        title: 'Vice',
+        genre: 'Drama',
+        year: '2018',
+        poster: 'https://image.tmdb.org/t/p/w500/1gCab6rNv1r6V64cwsU4oEr649Y.jpg',
+        synopsis: 'A história de Dick Cheney, o vice-presidente mais poderoso da história.'
+      },
+      {
+        id: '33',
+        title: 'Moana',
+        genre: 'Animação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/4JeejGugONWpJkbnvL12hVoYEDa.jpg',
+        synopsis: 'Uma jovem polinésia navega pelo oceano para salvar sua ilha.'
+      },
+      {
+        id: '34',
+        title: 'The Conjuring 2',
+        genre: 'Terror',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/zEqyD0SBt6HL7W9JQoWwtd5Do1T.jpg',
+        synopsis: 'Ed e Lorraine Warren investigam atividade paranormal em Londres.'
+      },
+      {
+        id: '35',
+        title: 'Zootopia',
+        genre: 'Animação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/hlK0e0wAQ3VLuJcsfIYPvb4JVud.jpg',
+        synopsis: 'Uma coelha policial e uma raposa vigarista resolvem um mistério.'
+      },
+      {
+        id: '36',
+        title: 'Doutor Estranho',
+        genre: 'Ação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/uGBVj3bEbCoZbDjjl9wTxcygko1.jpg',
+        synopsis: 'Um cirurgião descobre o mundo místico e se torna o Mago Supremo.'
+      },
+      {
+        id: '37',
+        title: 'La La Land',
+        genre: 'Drama',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/uDO8zWDhfWwoFdKS4fzkUJt0Rf0.jpg',
+        synopsis: 'Um pianista de jazz e uma atriz aspirante se apaixonam em Los Angeles.'
+      },
+      {
+        id: '38',
+        title: 'Lights Out',
+        genre: 'Terror',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/6EjKC0pANKjRuCOBhZCxBmLJkZs.jpg',
+        synopsis: 'Uma entidade sobrenatural só aparece no escuro.'
+      },
+      {
+        id: '39',
+        title: 'Deadpool',
+        genre: 'Comédia',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/yGSxMiF0cYuAiyuve5DA6bnWEOI.jpg',
+        synopsis: 'Wade Wilson se torna o anti-herói Deadpool após um experimento.'
+      },
+      {
+        id: '40',
+        title: 'Capitão América: Guerra Civil',
+        genre: 'Ação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg',
+        synopsis: 'Os Vingadores se dividem em duas facções opostas.'
+      },
+      {
+        id: '41',
+        title: 'Moonlight',
+        genre: 'Drama',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/4911T5FbJ9eD2Faz5Z8cT3SUhU.jpg',
+        synopsis: 'A jornada de autodescoberta de um jovem negro em três fases da vida.'
+      },
+      {
+        id: '42',
+        title: 'Procurando Dory',
+        genre: 'Animação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/yFjVlsJmEMacU0BNUwdGZlo2ixq.jpg',
+        synopsis: 'Dory parte em uma jornada para encontrar sua família.'
+      },
+      {
+        id: '43',
+        title: 'Don\'t Breathe',
+        genre: 'Terror',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/76daH7qjOPWaJMRyBVaqFWjlClo.jpg',
+        synopsis: 'Três ladrões invadem a casa de um veterano cego.'
+      },
+      {
+        id: '44',
+        title: 'Esquadrão Suicida',
+        genre: 'Ação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/e1mjopzAS2KNsvpbpahQ1a6SkSn.jpg',
+        synopsis: 'Vilões são recrutados para uma missão secreta do governo.'
+      },
+      {
+        id: '45',
+        title: 'Arrival',
+        genre: 'Drama',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/yImmxRokQ48PD49ughXdpKTAsQU.jpg',
+        synopsis: 'Uma linguista tenta se comunicar com alienígenas que chegaram à Terra.'
+      },
+      {
+        id: '46',
+        title: 'Pets - A Vida Secreta dos Bichos',
+        genre: 'Animação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/WLQN5aiQG8wc9SeKwixW7pAR8K.jpg',
+        synopsis: 'A vida secreta dos animais de estimação quando seus donos saem.'
+      },
+      {
+        id: '47',
+        title: 'The Purge: Election Year',
+        genre: 'Terror',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/hdSSf5u8XF4n2hotQ7tgYu7YDIA.jpg',
+        synopsis: 'Uma senadora tenta sobreviver à noite do expurgo.'
+      },
+      {
+        id: '48',
+        title: 'X-Men: Apocalipse',
+        genre: 'Ação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/2mtQwJKVKQrZgTz49Dizb25eOQQ.jpg',
+        synopsis: 'Os X-Men enfrentam o primeiro e mais poderoso mutante, Apocalipse.'
+      },
+      {
+        id: '49',
+        title: 'Manchester by the Sea',
+        genre: 'Drama',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/e8daDzP0vFOnGyKmve95Yv0D0io.jpg',
+        synopsis: 'Um homem deve cuidar do sobrinho após a morte de seu irmão.'
+      },
+      {
+        id: '50',
+        title: 'Sing',
+        genre: 'Animação',
+        year: '2016',
+        poster: 'https://image.tmdb.org/t/p/w500/zZTlF2eVVUkbdmccd3bNUU9T9sD.jpg',
+        synopsis: 'Um coala organiza uma competição de canto para salvar seu teatro.'
       }
     ];
   }
