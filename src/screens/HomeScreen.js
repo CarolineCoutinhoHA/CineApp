@@ -96,7 +96,7 @@ const HomeScreen = () => {
                 key={genre}
                 label={genre}
                 value={genre}
-                color="#FFFFFF"
+                color="#000000"
               />
             ))}
           </Picker>
@@ -109,6 +109,7 @@ const HomeScreen = () => {
         keyExtractor={(item) => item.id}
         numColumns={2}
         contentContainerStyle={styles.moviesList}
+        columnWrapperStyle={styles.row}
         showsVerticalScrollIndicator={false}
       />
     </View>
@@ -154,6 +155,9 @@ const styles = StyleSheet.create({
   },
   moviesList: {
     paddingBottom: 20,
+  },
+  row: {
+    justifyContent: 'space-between',
   },
   loadingContainer: {
     flex: 1,

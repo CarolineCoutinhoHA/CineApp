@@ -6,7 +6,8 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     margin: 8,
-    width: 150,
+    flex: 1,
+    maxWidth: '45%',
   },
   poster: {
     width: '100%',
