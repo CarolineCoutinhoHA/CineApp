@@ -73,7 +73,7 @@ export const fetchMovies = async () => {
         title: 'Frozen 2',
         genre: 'Animação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/mINJaa34MtknCTFJKwH6d7kxeWN.jpg',
+        poster: 'https://image.tmdb.org/t/p/w500/pjeMs3yqRmFL3giJy4PMXWZTTPa.jpg',
         synopsis: 'Elsa e Anna descobrem a origem dos poderes mágicos.'
       },
       {
@@ -273,7 +273,7 @@ export const fetchMovies = async () => {
         title: 'Moana',
         genre: 'Animação',
         year: '2016',
-        poster: 'https://image.tmdb.org/t/p/w500/4JeejGugONWpJkbnvL12hVoYEDa.jpg',
+        poster: 'https://image.tmdb.org/t/p/w500/4q2hz2m8hubgGF0DkQgg0mtE9BM.jpg',
         synopsis: 'Uma jovem polinésia navega pelo oceano para salvar sua ilha.'
       },
       {
@@ -377,7 +377,7 @@ export const fetchMovies = async () => {
         title: 'Pets - A Vida Secreta dos Bichos',
         genre: 'Animação',
         year: '2016',
-        poster: 'https://image.tmdb.org/t/p/w500/WLQN5aiQG8wc9SeKwixW7pAR8K.jpg',
+        poster: 'https://image.tmdb.org/t/p/w500/uiVw6UqLKtqtVAMwQbZAi8fTMot.jpg',
         synopsis: 'A vida secreta dos animais de estimação quando seus donos saem.'
       },
       {
@@ -409,7 +409,7 @@ export const fetchMovies = async () => {
         title: 'Sing',
         genre: 'Animação',
         year: '2016',
-        poster: 'https://image.tmdb.org/t/p/w500/zZTlF2eVVUkbdmccd3bNUU9T9sD.jpg',
+        poster: 'https://image.tmdb.org/t/p/w500/zc8FqPNqh6Da0BmfM8bZuBTdVhH.jpg',
         synopsis: 'Um coala organiza uma competição de canto para salvar seu teatro.'
       }
     ];
