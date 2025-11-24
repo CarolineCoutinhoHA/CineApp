@@ -27,30 +27,57 @@ const RegisterScreen = ({ navigation }) => {
     return emailRegex.test(email);
   };
 
-  const handleSubmit = async () => {
+  const validateForm = () => {
     if (!isLogin && !formData.name.trim()) {
       Alert.alert('Erro', 'Nome é obrigatório');
-      return;
+      return false;
+    }
+
+    if (!formData.email.trim()) {
+      Alert.alert('Erro', 'Email é obrigatório');
+      return false;
     }
 
     if (!validateEmail(formData.email)) {
-      Alert.alert('Erro', 'Email inválido');
-      return;
+      Alert.alert('Erro', 'Email inválido. Deve conter @ e um domínio válido (ex: .com, .br)');
+      return false;
+    }
+
+    if (!formData.password.trim()) {
+      Alert.alert('Erro', 'Senha é obrigatória');
+      return false;
     }
 
     if (formData.password.length < 6) {
       Alert.alert('Erro', 'Senha deve ter pelo menos 6 caracteres');
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleSubmit = async () => {
+    if (!validateForm()) {
       return;
     }
 
     if (isLogin) {
-      login(formData);
-      Alert.alert('Sucesso', 'Login realizado com sucesso!');
+      const result = login(formData);
+      if (result.success) {
+        Alert.alert('Sucesso', 'Login realizado com sucesso!');
+        navigation.navigate('Home');
+      } else {
+        Alert.alert('Erro', result.message);
+      }
     } else {
-      register(formData);
-      Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
+      const result = register(formData);
+      if (result.success) {
+        Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
+        navigation.navigate('Home');
+      } else {
+        Alert.alert('Erro', result.message);
+      }
     }
-    navigation.navigate('Home');
   };
 
   return (
