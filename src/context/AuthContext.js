@@ -17,37 +17,27 @@ export const AuthProvider = ({ children }) => {
   const [registeredUsers, setRegisteredUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
+  // Carregar dados na inicialização
   useEffect(() => {
-    loadUsers();
+    initializeData();
   }, []);
 
-  const loadUsers = async () => {
+  const initializeData = async () => {
     try {
-      const users = await AsyncStorage.getItem('registeredUsers');
-      if (users) {
-        setRegisteredUsers(JSON.parse(users));
-        console.log('Usuários carregados:', JSON.parse(users));
+      const stored = await AsyncStorage.getItem('cineapp_users');
+      if (stored) {
+        const users = JSON.parse(stored);
+        setRegisteredUsers(users);
       }
     } catch (error) {
-      console.error('Erro ao carregar usuários:', error);
-    } finally {
-      setIsLoading(false);
+      console.log('Erro ao carregar:', error);
     }
+    setIsLoading(false);
   };
 
-  const saveUsers = async (users) => {
-    try {
-      await AsyncStorage.setItem('registeredUsers', JSON.stringify(users));
-      console.log('Usuários salvos:', users);
-    } catch (error) {
-      console.error('Erro ao salvar usuários:', error);
-    }
-  };
+
 
   const login = (userData) => {
-    console.log('Tentativa de login:', userData.email);
-    console.log('Usuários registrados:', registeredUsers);
-    
     const existingUser = registeredUsers.find(
       u => u.email === userData.email && u.password === userData.password
     );
@@ -66,7 +56,7 @@ export const AuthProvider = ({ children }) => {
     setIsLoggedIn(false);
   };
 
-  const register = (userData) => {
+  const register = async (userData) => {
     const emailExists = registeredUsers.some(u => u.email === userData.email);
     
     if (emailExists) {
@@ -75,11 +65,16 @@ export const AuthProvider = ({ children }) => {
     
     const newUser = { ...userData, id: Date.now().toString() };
     const updatedUsers = [...registeredUsers, newUser];
-    setRegisteredUsers(updatedUsers);
-    saveUsers(updatedUsers);
-    setUser(newUser);
-    setIsLoggedIn(true);
-    return { success: true };
+    
+    try {
+      await AsyncStorage.setItem('cineapp_users', JSON.stringify(updatedUsers));
+      setRegisteredUsers(updatedUsers);
+      setUser(newUser);
+      setIsLoggedIn(true);
+      return { success: true };
+    } catch (error) {
+      return { success: false, message: 'Erro ao salvar usuário' };
+    }
   };
 
   const value = {

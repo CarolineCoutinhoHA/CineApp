@@ -70,7 +70,7 @@ const RegisterScreen = ({ navigation }) => {
         Alert.alert('Erro', result.message);
       }
     } else {
-      const result = register(formData);
+      const result = await register(formData);
       if (result.success) {
         Alert.alert('Sucesso', 'Cadastro realizado com sucesso!');
         navigation.navigate('Home');
