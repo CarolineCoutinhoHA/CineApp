@@ -17,7 +17,7 @@ export const fetchMovies = async () => {
         title: 'Vingadores: Ultimato',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Vingadores+Ultimato',
         synopsis: 'Os heróis mais poderosos da Terra enfrentam Thanos.'
       },
       {
@@ -25,7 +25,7 @@ export const fetchMovies = async () => {
         title: 'Parasita',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Parasita',
         synopsis: 'Uma família pobre se infiltra na vida de uma família rica.'
       },
       {
@@ -33,7 +33,7 @@ export const fetchMovies = async () => {
         title: 'Coringa',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Coringa',
         synopsis: 'A origem sombria do icônico vilão de Gotham.'
       },
       {
@@ -41,7 +41,7 @@ export const fetchMovies = async () => {
         title: 'Toy Story 4',
         genre: 'Animação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/w9kR8qbmQ01HwnvK4alvnQ2ca0L.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Toy+Story+4',
         synopsis: 'Woody e seus amigos embarcam em uma nova aventura.'
       },
       {
@@ -49,7 +49,7 @@ export const fetchMovies = async () => {
         title: 'Homem-Aranha: Longe de Casa',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/4q2NNj4S5dG2RLF9CpXsej7yXl.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Homem+Aranha',
         synopsis: 'Peter Parker enfrenta novos desafios na Europa.'
       },
       {
@@ -57,7 +57,7 @@ export const fetchMovies = async () => {
         title: 'It: Capítulo Dois',
         genre: 'Terror',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=It+Capitulo+2',
         synopsis: 'O Clube dos Perdedores retorna para enfrentar Pennywise.'
       },
       {
@@ -65,7 +65,7 @@ export const fetchMovies = async () => {
         title: 'John Wick 3',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/ziEuG1essDuWuC5lpWUaw1uXY2O.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=John+Wick+3',
         synopsis: 'John Wick luta pela sobrevivência após ser banido.'
       },
       {
@@ -73,7 +73,7 @@ export const fetchMovies = async () => {
         title: 'Frozen 2',
         genre: 'Animação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/pjeMs3yqRmFL3giJy4PMXWZTTPa.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Frozen+2',
         synopsis: 'Elsa e Anna descobrem a origem dos poderes mágicos.'
       },
       {
@@ -81,7 +81,7 @@ export const fetchMovies = async () => {
         title: 'Era Uma Vez em Hollywood',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/8j58iEBw9pOXFD2L0nt0ZXeHviB.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Era+Uma+Vez+Hollywood',
         synopsis: 'Hollywood em 1969 através dos olhos de um ator e seu dublê.'
       },
       {
@@ -89,7 +89,7 @@ export const fetchMovies = async () => {
         title: 'Jumanji: Próxima Fase',
         genre: 'Comédia',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/bB42KDdfWkOvmzmYkmK58ZlCa9P.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Jumanji',
         synopsis: 'Os amigos retornam ao perigoso mundo de Jumanji.'
       },
       {
@@ -97,7 +97,7 @@ export const fetchMovies = async () => {
         title: 'Midsommar',
         genre: 'Terror',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Midsommar',
         synopsis: 'Um casal viaja para um festival de verão na Suécia.'
       },
       {
@@ -105,7 +105,7 @@ export const fetchMovies = async () => {
         title: 'Knives Out',
         genre: 'Comédia',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/pThyQovXQrw2m0s9x82twj48Jq4.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Knives+Out',
         synopsis: 'Um detetive investiga a morte de um escritor famoso.'
       },
       {
@@ -113,7 +113,7 @@ export const fetchMovies = async () => {
         title: 'Pantera Negra',
         genre: 'Ação',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Pantera+Negra',
         synopsis: 'T\'Challa retorna para casa para ser coroado rei de Wakanda.'
       },
       {
@@ -121,7 +121,7 @@ export const fetchMovies = async () => {
         title: 'A Forma da Água',
         genre: 'Drama',
         year: '2017',
-        poster: 'https://image.tmdb.org/t/p/w500/k4FwHlMhuRR5BISY2Gm2QZHlH5Q.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Forma+da+Agua',
         synopsis: 'Uma mulher muda se apaixona por uma criatura aquática.'
       },
       {
@@ -129,7 +129,7 @@ export const fetchMovies = async () => {
         title: 'Coco',
         genre: 'Animação',
         year: '2017',
-        poster: 'https://image.tmdb.org/t/p/w500/gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Coco',
         synopsis: 'Miguel viaja para a Terra dos Mortos para descobrir sua família.'
       },
       {
@@ -137,7 +137,7 @@ export const fetchMovies = async () => {
         title: 'Hereditary',
         genre: 'Terror',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/p81a0FTVzsmCQP3SFm3hLZJQNkZ.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Hereditary',
         synopsis: 'Uma família enfrenta segredos sombrios após a morte da avó.'
       },
       {
@@ -145,7 +145,7 @@ export const fetchMovies = async () => {
         title: 'Deadpool 2',
         genre: 'Comédia',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/to0spRl1CMDvyUbOnbb4fTk3VAd.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Deadpool+2',
         synopsis: 'Wade Wilson forma uma equipe para proteger um jovem mutante.'
       },
       {
@@ -153,7 +153,7 @@ export const fetchMovies = async () => {
         title: 'Bohemian Rhapsody',
         genre: 'Drama',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/lHu1wtNaczFPGFDTrjCSzeLPTKN.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Bohemian+Rhapsody',
         synopsis: 'A história da lendária banda Queen e seu vocalista Freddie Mercury.'
       },
       {
@@ -161,7 +161,7 @@ export const fetchMovies = async () => {
         title: 'Aquaman',
         genre: 'Ação',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/5Kg76ldv7VxeX9YlcQXiowHgdX6.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Aquaman',
         synopsis: 'Arthur Curry descobre que é herdeiro do reino subaquático de Atlântida.'
       },
       {
@@ -169,7 +169,7 @@ export const fetchMovies = async () => {
         title: 'Homem-Aranha no Aranhaverso',
         genre: 'Animação',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/iiZZdoQBEYBv6id8su7ImL0oCbD.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Homem+Aranha+Aranhaverso',
         synopsis: 'Miles Morales se torna o novo Homem-Aranha em seu universo.'
       },
       {
@@ -177,7 +177,7 @@ export const fetchMovies = async () => {
         title: 'A Quiet Place',
         genre: 'Terror',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/nAU74GmpUk7t5iklEp3bufwDq4n.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=A+Quiet+Place',
         synopsis: 'Uma família vive em silêncio para evitar criaturas que caçam pelo som.'
       },
       {
@@ -185,7 +185,7 @@ export const fetchMovies = async () => {
         title: 'Capitã Marvel',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://image.tmdb.org/t/p/w500/AtsgWhDnHTq68L0lLsUrCnM7TjG.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Capita+Marvel',
         synopsis: 'Carol Danvers se torna uma das heroínas mais poderosas do universo.'
       },
       {
@@ -193,7 +193,7 @@ export const fetchMovies = async () => {
         title: 'Green Book',
         genre: 'Drama',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/7BsvSuDQuoqhWmU2fL7W2GOcZHU.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Green+Book',
         synopsis: 'Um pianista negro e seu motorista branco viajam pelo sul dos EUA.'
       },
       {
@@ -201,7 +201,7 @@ export const fetchMovies = async () => {
         title: 'Os Incríveis 2',
         genre: 'Animação',
         year: '2018',
-        poster: 'https://image.tmdb.org/t/p/w500/9lFKBtaVIhP7E2Pk0IY1CwTKTMZ.jpg',
+        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Os+Incriveis+2',
         synopsis: 'A família Pêra enfrenta novos desafios enquanto Helen trabalha como heroína.'
       },
       {
