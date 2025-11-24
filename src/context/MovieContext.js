@@ -1,4 +1,6 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useAuth } from './AuthContext';
 
 const MovieContext = createContext();
 
@@ -11,32 +13,105 @@ export const useMovies = () => {
 };
 
 export const MovieProvider = ({ children }) => {
+  const { user, isLoggedIn } = useAuth();
   const [movies, setMovies] = useState([]);
   const [favorites, setFavorites] = useState([]);
   const [watchedMovies, setWatchedMovies] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    if (isLoggedIn && user) {
+      loadMovieData(user.id);
+    } else {
+      setFavorites([]);
+      setWatchedMovies([]);
+      setIsLoading(false);
+    }
+  }, [isLoggedIn, user]);
+
+  const loadMovieData = async (userId) => {
+    if (!userId) {
+      setIsLoading(false);
+      return;
+    }
+    
+    try {
+      const favs = await AsyncStorage.getItem(`favorites_${userId}`);
+      const watched = await AsyncStorage.getItem(`watchedMovies_${userId}`);
+      
+      if (favs) {
+        setFavorites(JSON.parse(favs));
+      } else {
+        setFavorites([]);
+      }
+      if (watched) {
+        setWatchedMovies(JSON.parse(watched));
+      } else {
+        setWatchedMovies([]);
+      }
+    } catch (error) {
+      console.error('Erro ao carregar dados dos filmes:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const saveFavorites = async (favs, userId) => {
+    if (!userId) return;
+    try {
+      await AsyncStorage.setItem(`favorites_${userId}`, JSON.stringify(favs));
+    } catch (error) {
+      console.error('Erro ao salvar favoritos:', error);
+    }
+  };
+
+  const saveWatched = async (watched, userId) => {
+    if (!userId) return;
+    try {
+      await AsyncStorage.setItem(`watchedMovies_${userId}`, JSON.stringify(watched));
+    } catch (error) {
+      console.error('Erro ao salvar assistidos:', error);
+    }
+  };
 
   const addFavorite = (movie) => {
+    if (!user) return;
     setFavorites(prev => {
       const exists = prev.find(fav => fav.id === movie.id);
       if (exists) return prev;
-      return [...prev, { ...movie, isFavorite: true }];
+      const newFavs = [...prev, { ...movie, isFavorite: true }];
+      saveFavorites(newFavs, user.id);
+      return newFavs;
     });
   };
 
   const removeFavorite = (movieId) => {
-    setFavorites(prev => prev.filter(fav => fav.id !== movieId));
+    if (!user) return;
+    setFavorites(prev => {
+      const newFavs = prev.filter(fav => fav.id !== movieId);
+      saveFavorites(newFavs, user.id);
+      return newFavs;
+    });
   };
 
   const addWatched = (movie) => {
+    if (!user) return;
     setWatchedMovies(prev => {
       const exists = prev.find(watched => watched.id === movie.id);
       if (exists) return prev;
-      return [...prev, { ...movie, isWatched: true }];
+      const newWatched = [...prev, { ...movie, isWatched: true }];
+      saveWatched(newWatched, user.id);
+      return newWatched;
     });
   };
 
   const removeWatched = (movieId) => {
-    setWatchedMovies(prev => prev.filter(watched => watched.id !== movieId));
+    if (!user) return;
+    setWatchedMovies(prev => {
+      const newWatched = prev.filter(watched => watched.id !== movieId);
+      saveWatched(newWatched, user.id);
+      return newWatched;
+    });
   };
 
   const isFavorite = (movieId) => {
@@ -52,6 +127,7 @@ export const MovieProvider = ({ children }) => {
     setMovies,
     favorites,
     watchedMovies,
+    isLoading,
     addFavorite,
     removeFavorite,
     addWatched,

@@ -20,7 +20,7 @@ const RegisterScreen = ({ navigation }) => {
     email: '',
     password: '',
   });
-  const { login, register } = useAuth();
+  const { login, register, isLoading } = useAuth();
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -79,6 +79,15 @@ const RegisterScreen = ({ navigation }) => {
       }
     }
   };
+
+  if (isLoading) {
+    return (
+      <View style={styles.loadingContainer}>
+        <ActivityIndicator size="large" color="#FFD700" />
+        <Text style={styles.loadingText}>Carregando...</Text>
+      </View>
+    );
+  }
 
   return (
     <KeyboardAvoidingView
@@ -157,6 +166,17 @@ const styles = StyleSheet.create({
     padding: 15,
     borderRadius: 8,
     marginBottom: 15,
+    fontSize: 16,
+  },
+  loadingContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#1A1A2E',
+  },
+  loadingText: {
+    color: '#FFFFFF',
+    marginTop: 10,
     fontSize: 16,
   },
 });

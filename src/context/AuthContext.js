@@ -15,6 +15,7 @@ export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [registeredUsers, setRegisteredUsers] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     loadUsers();
@@ -25,21 +26,28 @@ export const AuthProvider = ({ children }) => {
       const users = await AsyncStorage.getItem('registeredUsers');
       if (users) {
         setRegisteredUsers(JSON.parse(users));
+        console.log('Usuários carregados:', JSON.parse(users));
       }
     } catch (error) {
       console.error('Erro ao carregar usuários:', error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const saveUsers = async (users) => {
     try {
       await AsyncStorage.setItem('registeredUsers', JSON.stringify(users));
+      console.log('Usuários salvos:', users);
     } catch (error) {
       console.error('Erro ao salvar usuários:', error);
     }
   };
 
   const login = (userData) => {
+    console.log('Tentativa de login:', userData.email);
+    console.log('Usuários registrados:', registeredUsers);
+    
     const existingUser = registeredUsers.find(
       u => u.email === userData.email && u.password === userData.password
     );
@@ -77,6 +85,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     user,
     isLoggedIn,
+    isLoading,
     login,
     logout,
     register
