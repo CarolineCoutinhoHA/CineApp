@@ -17,7 +17,7 @@ export const fetchMovies = async () => {
         title: 'Vingadores: Ultimato',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Vingadores+Ultimato',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_.jpg',
         synopsis: 'Os heróis mais poderosos da Terra enfrentam Thanos.'
       },
       {
@@ -25,7 +25,7 @@ export const fetchMovies = async () => {
         title: 'Parasita',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Parasita',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYWZjMjk3ZTItODQ2ZC00NTY5LWE0ZDYtZTI3MjcwN2Q5NTVkXkEyXkFqcGdeQXVyODk4OTc3MTY@._V1_.jpg',
         synopsis: 'Uma família pobre se infiltra na vida de uma família rica.'
       },
       {
@@ -33,7 +33,7 @@ export const fetchMovies = async () => {
         title: 'Coringa',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Coringa',
+        poster: 'https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg',
         synopsis: 'A origem sombria do icônico vilão de Gotham.'
       },
       {
@@ -41,7 +41,7 @@ export const fetchMovies = async () => {
         title: 'Toy Story 4',
         genre: 'Animação',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Toy+Story+4',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMTYzMDM4NzkxOV5BMl5BanBnXkFtZTgwNzM1Mzg2NzM@._V1_.jpg',
         synopsis: 'Woody e seus amigos embarcam em uma nova aventura.'
       },
       {
@@ -49,7 +49,7 @@ export const fetchMovies = async () => {
         title: 'Homem-Aranha: Longe de Casa',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Homem+Aranha',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMGZlNTY1ZWUtYTMzNC00ZjUyLWE0MjQtMTMxN2E3ODYxMWVmXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg',
         synopsis: 'Peter Parker enfrenta novos desafios na Europa.'
       },
       {
@@ -57,7 +57,7 @@ export const fetchMovies = async () => {
         title: 'It: Capítulo Dois',
         genre: 'Terror',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=It+Capitulo+2',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYTJlNjlkZTktNjEwOS00NzI5LTlkNDAtZmEzZDFiMGI2MjhhXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg',
         synopsis: 'O Clube dos Perdedores retorna para enfrentar Pennywise.'
       },
       {
@@ -65,7 +65,7 @@ export const fetchMovies = async () => {
         title: 'John Wick 3',
         genre: 'Ação',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=John+Wick+3',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMDg2YzI0ODctYjliMy00NTU0LTkxODYtYTNkNjQwMzVmOTcxXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg',
         synopsis: 'John Wick luta pela sobrevivência após ser banido.'
       },
       {
@@ -73,7 +73,7 @@ export const fetchMovies = async () => {
         title: 'Frozen 2',
         genre: 'Animação',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Frozen+2',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMjA0YjYyZGMtN2U0Ni00YmY4LWJkZTItYTMyMjY3NGYyMTJkXkEyXkFqcGdeQXVyNDg4NjY5OTQ@._V1_.jpg',
         synopsis: 'Elsa e Anna descobrem a origem dos poderes mágicos.'
       },
       {
@@ -81,7 +81,7 @@ export const fetchMovies = async () => {
         title: 'Era Uma Vez em Hollywood',
         genre: 'Drama',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Era+Uma+Vez+Hollywood',
+        poster: 'https://m.media-amazon.com/images/M/MV5BOTg4ZTNkZmUtMzNlZi00YmFjLTk1MmUtNWQwNTM0YjcyNTNkXkEyXkFqcGdeQXVyNjg2NjQwMDQ@._V1_.jpg',
         synopsis: 'Hollywood em 1969 através dos olhos de um ator e seu dublê.'
       },
       {
@@ -89,7 +89,7 @@ export const fetchMovies = async () => {
         title: 'Jumanji: Próxima Fase',
         genre: 'Comédia',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Jumanji',
+        poster: 'https://m.media-amazon.com/images/M/MV5BYTVlMDg4NTEtNzBhZi00NzBkLTllYTgtMDUzN2NlMWI0NWEyXkEyXkFqcGdeQXVyNTAzNzgwNTg@._V1_.jpg',
         synopsis: 'Os amigos retornam ao perigoso mundo de Jumanji.'
       },
       {
@@ -97,7 +97,7 @@ export const fetchMovies = async () => {
         title: 'Midsommar',
         genre: 'Terror',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Midsommar',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg',
         synopsis: 'Um casal viaja para um festival de verão na Suécia.'
       },
       {
@@ -105,7 +105,7 @@ export const fetchMovies = async () => {
         title: 'Knives Out',
         genre: 'Comédia',
         year: '2019',
-        poster: 'https://via.placeholder.com/300x450/1A1A2E/FFD700?text=Knives+Out',
+        poster: 'https://m.media-amazon.com/images/M/MV5BMGUwZjliMTAtNzAxZi00MWNiLWE2NzgtZGUxMGQxZjhhNDRiXkEyXkFqcGdeQXVyNjU1NzU3MzE@._V1_.jpg',
         synopsis: 'Um detetive investiga a morte de um escritor famoso.'
       },
       {
